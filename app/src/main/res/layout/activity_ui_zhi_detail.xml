@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".uizhi.UiZhiDetailActivity">
+
+    <ImageView
+        android:id="@+id/detail_uizhi_pic"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/img_product_pic"
+        android:transitionName="detailPic"
+        tools:targetApi="lollipop" />
+
+    <ImageView
+        android:id="@+id/detail_uizhi_close"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="20dp"
+        android:scaleX="0"
+        android:scaleY="0"
+        android:src="@mipmap/ic_launcher_round"
+        app:layout_constraintBottom_toBottomOf="@+id/detail_uizhi_pic"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/detail_uizhi_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:scaleX="0"
+        android:scaleY="0"
+        android:textColor="#333333"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_uizhi_pic"
+        tools:text="title" />
+
+
+    <FrameLayout
+        android:id="@+id/detail_uizhi_scene_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_uizhi_title" />
+</android.support.constraint.ConstraintLayout>

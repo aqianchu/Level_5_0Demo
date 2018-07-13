@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/detail_uizhi_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#aaaaaa"
+        android:textSize="15sp"
+        tools:text="This is our high-tech product. This type of product has a high performance. It could be used in the deep ocean 5,000 meters under sea level monitoring environmental changes around 300 square kilometersin the waters. Additionally, its quality is quite good. Every product should be inspected  for  five  times  by  quality inspection system and tried out for one month in order to assure its quality and performance." />
+
+</LinearLayout>

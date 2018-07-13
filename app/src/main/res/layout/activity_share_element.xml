@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".share.ShareElementActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="100dp">
+
+        <View
+            android:id="@+id/view_top_yellow"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/shape_round_rectangle_yellow" />
+
+        <View
+            android:id="@+id/view_top_purple"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/shape_round_rectangle_purple" />
+
+        <ImageView
+            android:id="@+id/iv_share_element"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_below="@+id/view_top_yellow"
+            android:layout_marginTop="30dp"
+            android:src="@mipmap/ic_launcher_round" />
+
+        <View
+            android:id="@+id/view_bottom_right_deep_sky_blue"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/view_top_purple"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shape_round_rectangle_deep_sky_blue" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
